@@ -1,0 +1,154 @@
+@use "../styles/mixins";
+
+.header {
+  padding: 8px 44px;
+  height: 80px;
+  width: 100vw;
+  color: #adff2f;
+  background-color: #1c1c22;
+  opacity: 0.8;
+  display: flex;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 100px 0px #adff2f;
+
+  @include mixins.mq(mixins.$mobile) {
+    padding: 8px;
+  }
+}
+
+.logo {
+  height: 100%;
+  width: 25%;
+
+  @include mixins.mq(mixins.$mobile) {
+    width: 50%;
+  }
+
+  .ul {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .li {
+      height: 100%;
+      width: auto;
+      padding: 16px;
+      border-radius: 8px;
+      transition: 0.5s;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        background-color: #424141;
+        cursor: pointer;
+      }
+
+      @include mixins.mq(mixins.$tablet) {
+        padding: 4px;
+      }
+
+      @include mixins.mq(mixins.$mobile) {
+        padding: 4px;
+      }
+    }
+  }
+}
+
+.menu {
+  height: 100%;
+  font-size: 24px;
+  width: 75%;
+  display: flex;
+  justify-content: end;
+
+  @include mixins.mq(mixins.$mobile) {
+    width: 50%;
+    gap: 0px;
+    gap: 0px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    @include mixins.mq(mixins.$mobile) {
+      display: none;
+    }
+
+    .ul {
+      list-style: none;
+      display: flex;
+      gap: 4px;
+      height: 100%;
+
+      @include mixins.mq(mixins.$mobile) {
+        gap: 0;
+      }
+
+      .li {
+        padding: 8px;
+        border-radius: 8px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: 0.5s;
+
+        &:hover {
+          background-color: #424141;
+          cursor: pointer;
+        }
+      }
+
+    }
+  }
+}
+
+
+
+
+
+
+
+.night_mode {
+  height: 100%;
+  display: flex;
+  padding: 16px;
+  color: #adff2f;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: 0.5s;
+  border-radius: 100%;
+
+
+  &:hover {
+    background-color: #424141;
+    cursor: pointer;
+  }
+}
+
+.menu_pulldown {
+  display: none;
+
+  @include mixins.mq(mixins.$mobile) {
+    height: 100%;
+    padding: 8px;
+    color: #adff2f;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    display: flex;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #424141;
+      cursor: pointer;
+    }
+  }
+}
