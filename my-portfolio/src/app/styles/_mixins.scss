@@ -1,0 +1,10 @@
+@use 'sass:map';
+
+$mobile: 768px;
+$tablet: 1024px;
+
+@mixin mq($bp) {
+  @media (max-width: ($bp)) {
+    @content;
+  }
+}
