@@ -1,0 +1,63 @@
+@use "../styles/mixins";
+
+.menu_bar {
+  background-color: #1c1c22;
+  width: 600px;
+  height: 100vh;
+  position: fixed;
+  right: -600px;
+  z-index: 5;
+  opacity: .9;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+
+  @include mixins.mq(mixins.$mobile) {
+    width: 60%;
+  }
+
+  .nav {
+    height: 50vh;
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    .ul {
+      list-style: none;
+      font-size: 32px;
+
+      .li {
+        padding: 16px;
+        border-radius: 8px;
+        transition: 0.5s;
+
+        &:hover {
+          background-color: #424141;
+          cursor: pointer;
+        }
+
+        .link {
+          color: #adff2f;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.showUp {
+  position: fixed;
+  right: 0px;
+}
+
+.backGround {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #1c1c22;
+  opacity: 0.8;
+}

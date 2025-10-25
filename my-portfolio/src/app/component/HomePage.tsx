@@ -9,7 +9,7 @@ const HomePage = () => {
 
       <div className={styles.profileImage}>
         <div className={styles.imageWrapper}>
-          <Image src="/profile.jpg" alt="" width={300} height={400} className={styles.img} />
+          <Image src="/profile.jpg" alt="" width={300} height={400} className={styles.img} priority />
         </div>
 
       </div>
