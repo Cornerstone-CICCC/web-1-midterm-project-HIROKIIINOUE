@@ -13,7 +13,7 @@ import MenuBar from './MenuBar';
 const Header = () => {
   const currentPath = usePathname()
   const [currentPage, setCurrentPage] = useState<string>("")
-  const [isMenuBar, setIsMenuBar] = useState<boolean>(true) //ココ
+  const [isMenuBar, setIsMenuBar] = useState<boolean>(false)
 
   useEffect(() => {
     setCurrentPage(currentPath)
