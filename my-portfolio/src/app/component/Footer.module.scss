@@ -4,14 +4,14 @@
   padding: 8px 44px;
   height: 72px;
   width: 100vw;
-  color: #adff2f;
+  color: white;
   background-color: #1c1c22;
-  opacity: 0.8;
+  opacity: 0.9;
   display: flex;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   align-items: center;
-  box-shadow: 0px 0px 100px 0px #adff2f;
+  box-shadow: 0px 0px 40px 0px #adff2f;
 
 
   @include mixins.mq(mixins.$mobile) {
@@ -31,7 +31,7 @@
 
       .a {
         text-decoration: none;
-        color: #adff2f;
+        color: white;
       }
     }
   }

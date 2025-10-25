@@ -45,9 +45,9 @@ const Header: React.FC = () => {
         <div className={styles.menu_pulldown}>
           <ListTwoToneIcon sx={{ fontSize: 40 }} />
         </div>
-        <div className={styles.night_mode}>
+        {/* <div className={styles.night_mode}>
           <NightlightTwoToneIcon sx={{ fontSize: 40 }} />
-        </div>
+        </div> */}
       </menu>
 
     </header>
