@@ -17,7 +17,7 @@ const Header: React.FC = () => {
       <div className={styles.logo}>
         <ul className={styles.ul}>
           <li className={styles.li}>
-            <Link href="https://google.com">
+            <Link href="https://www.linkedin.com/in/hiroki-inoue-04a805377/" target="_blank">
               <LinkedInIcon sx={{ fontSize: 40, color: "#adff2f" }} />
             </Link>
           </li>
@@ -27,8 +27,8 @@ const Header: React.FC = () => {
             </Link>
           </li>
           <li className={styles.li}>
-            <Link href="https://google.com">
-              <GitHubIcon sx={{ fontSize: 40, color: "#adff2f" }} />
+            <Link href="https://github.com/HIROKIIINOUE" target="_blank">
+              <GitHubIcon sx={{ fontSize: 40, color: "#adff2f" }} target="_blank" />
             </Link>
           </li>
         </ul>
