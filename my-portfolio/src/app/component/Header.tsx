@@ -9,11 +9,28 @@ import Link from 'next/link';
 import ListTwoToneIcon from '@mui/icons-material/ListTwoTone';
 import { usePathname } from 'next/navigation';
 import MenuBar from './MenuBar';
+import { useLanguage } from '../providers/LanguageProvider';
+
+type LanguageKey = "english" | "japanese" | "french";
 
 const Header = () => {
   const currentPath = usePathname()
   const [currentPage, setCurrentPage] = useState<string>("")
   const [isMenuBar, setIsMenuBar] = useState<boolean>(false)
+  const { language, setLanguage } = useLanguage()
+
+  // decide initial data as english
+  const currentLanguage: LanguageKey =
+    language === "english" || language === "japanese" || language === "french"
+      ? language
+      : "english";
+
+  const script: Record<string, string[]> = {
+    english: ["Home", "My History", "Project", "Language"],
+    japanese: ["ホーム", "履歴", "プロジェクト", "言語"],
+    french: ["NAOSU", "NAOSU", "NAOSU", "NAOSU"]
+  }
+
 
   useEffect(() => {
     setCurrentPage(currentPath)
@@ -44,10 +61,10 @@ const Header = () => {
         <menu className={styles.menu}>
           <nav className={styles.nav}>
             <ul className={styles.ul}>
-              <li className={styles.li}><Link className={currentPage === "/" ? `${styles.link} ${styles.selected}` : `${styles.link}`} href="/">Home</Link></li>
-              <li className={styles.li}><Link className={currentPage === "/history" ? `${styles.link} ${styles.selected}` : `${styles.link}`} href="/history">My History</Link></li>
-              <li className={styles.li}><Link className={currentPage === "/project" ? `${styles.link} ${styles.selected}` : `${styles.link}`} href="/project">Project</Link></li>
-              <li className={styles.li}><Link className={currentPage === "/language" ? `${styles.link} ${styles.selected}` : `${styles.link}`} href="/language">Language</Link></li>
+              <li className={styles.li}><Link className={currentPage === "/" ? `${styles.link} ${styles.selected}` : `${styles.link}`} href="/">{script[currentLanguage][0]}</Link></li>
+              <li className={styles.li}><Link className={currentPage === "/history" ? `${styles.link} ${styles.selected}` : `${styles.link}`} href="/history">{script[currentLanguage][1]}</Link></li>
+              <li className={styles.li}><Link className={currentPage === "/project" ? `${styles.link} ${styles.selected}` : `${styles.link}`} href="/project">{script[currentLanguage][2]}</Link></li>
+              <li className={styles.li}><Link className={currentPage === "/language" ? `${styles.link} ${styles.selected}` : `${styles.link}`} href="/language">{script[currentLanguage][3]}</Link></li>
             </ul>
           </nav>
           <button type='button' className={styles.menu_button} onClick={() => setIsMenuBar(true)}>

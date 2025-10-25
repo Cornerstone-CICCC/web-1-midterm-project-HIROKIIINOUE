@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 import styles from "./layout.module.scss"
+import { LanguageProvider } from "./providers/LanguageProvider";
+
 
 
 export const metadata: Metadata = {
@@ -19,11 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={styles.body}>
-        <Header />
-        <main className={styles.main}>
-          {children}
-        </main>
-        <Footer />
+        <LanguageProvider>
+          <Header />
+          <main className={styles.main}>{children}</main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );
