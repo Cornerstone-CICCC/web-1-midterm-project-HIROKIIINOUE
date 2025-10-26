@@ -10,6 +10,7 @@ import ListTwoToneIcon from '@mui/icons-material/ListTwoTone';
 import { usePathname } from 'next/navigation';
 import MenuBar from './MenuBar';
 import { useLanguage } from '../providers/LanguageProvider';
+import { headerScript } from '../scriptdata/scriptData';
 
 type LanguageKey = "english" | "japanese" | "french";
 
@@ -17,7 +18,7 @@ const Header = () => {
   const currentPath = usePathname()
   const [currentPage, setCurrentPage] = useState<string>("")
   const [isMenuBar, setIsMenuBar] = useState<boolean>(false)
-  const { language, setLanguage } = useLanguage()
+  const { language } = useLanguage()
 
   // decide initial data as english
   const currentLanguage: LanguageKey =
@@ -25,11 +26,7 @@ const Header = () => {
       ? language
       : "english";
 
-  const script: Record<string, string[]> = {
-    english: ["Home", "My History", "Project", "Language"],
-    japanese: ["ホーム", "履歴", "プロジェクト", "言語"],
-    french: ["NAOSU", "NAOSU", "NAOSU", "NAOSU"]
-  }
+  const script = headerScript;
 
 
   useEffect(() => {

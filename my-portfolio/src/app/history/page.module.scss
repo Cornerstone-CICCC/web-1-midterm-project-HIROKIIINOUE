@@ -1,0 +1,86 @@
+@use "../styles/mixins";
+
+.history {
+  width: 80%;
+  margin: 36px auto;
+  color: #adff2f;
+
+  // background-color: pink;
+  .h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 52px;
+    background: linear-gradient(90deg, rgb(220, 245, 183) 0%, rgba(173, 255, 47, 1) 35%, rgba(61, 230, 14, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include mixins.mq(mixins.$mobile) {
+      font-size: 36px;
+    }
+
+    &:after {
+      margin-top: 8px;
+      background: linear-gradient(90deg, rgba(219, 245, 181, 1) 0%, rgba(173, 255, 47, 1) 35%, rgba(61, 230, 14, 1) 100%);
+      border-radius: 5px;
+      content: "";
+      display: block;
+      height: 4px;
+    }
+
+  }
+
+  .ul {
+    width: 100%;
+    margin-top: 42px;
+    padding: 36px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
+    @include mixins.mq(mixins.$mobile) {
+      padding: 0 0 0 16px;
+    }
+
+    .li {
+      border-left: 4px #dbf5b5 solid;
+      padding: 24px;
+      margin: 0 auto;
+      width: 50%;
+      position: relative;
+      z-index: -10;
+      transition: opacity 500ms, transform 2000ms;
+
+      @include mixins.mq(mixins.$mobile) {
+        width: 100%;
+      }
+
+      &:before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        background: #adff2f;
+        position: absolute;
+        left: -8px;
+        top: 48px;
+        border-radius: 100%;
+      }
+
+      .h2 {
+        margin-top: 8px;
+        color: #dbf5b5;
+      }
+
+      p {
+        margin-top: 8px;
+        color: white;
+      }
+    }
+
+    .fade_in {
+      transform: translateY(80px);
+      opacity: 0;
+    }
+  }
+
+}

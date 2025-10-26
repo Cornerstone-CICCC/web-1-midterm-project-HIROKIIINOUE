@@ -5,7 +5,7 @@ import styles from './page.module.scss'
 import { useLanguage } from '../providers/LanguageProvider'
 
 const LanguageOption = () => {
-  const [fadeIn, setFadeIn] = useState(false)
+  const [fadeIn, setFadeIn] = useState<boolean>(false)
   const { setLanguage } = useLanguage()
 
   const changeLanguage = (selected: "english" | "japanese" | "french") => {
@@ -13,8 +13,6 @@ const LanguageOption = () => {
   }
 
   setTimeout(() => setFadeIn(true), 10)
-
-
 
   return (
     <div className={styles.languageList}>
