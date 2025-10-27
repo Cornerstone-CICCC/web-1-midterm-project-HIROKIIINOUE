@@ -1,30 +1,23 @@
 import Image from 'next/image'
 import styles from './MyOwnProjectList.module.scss'
 import React from 'react'
+import { ownProjectScriptEn } from '../scriptdata/ownProjectScriptData';
+
 
 const MyOwnProjectList = () => {
+  const scripts = ownProjectScriptEn;
+
   return (
     <div className={styles.project_list}>
-      <div className={styles.project}>
-        <h2 className={styles.h2}>222itle</h2>
-        <Image src="/profile.jpg" alt="" width={300} height={400} className={styles.img} priority />
-        <p className={styles.p}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, culpa. Iure ipsum odio molestiae consequuntur repellat laborum sequi laboriosam itaque dolor distinctio eveniet, optio fugit blanditiis cumque ditatibus maxime odio sed adipisci dolore dicta recusandae facilis, nobis tempora corporis delectus ex est ducimus architecto sit ullam? Laudantium accusantium qui ea aspernatur totam cumque exercitationem architecto nemo quae distinctio quos sunt, alias dignissimos, suscipit tempora eius adipisci aliquid culpa accusamus illum quidem! Ab, praesentium? Facilis error dicta quaerat temporibus esse! Odit cupiditate reiciendis quo. Numquam corporis dicta voluptatem earum accusamus excepturi ex atque aut eos, sint neque beatae doloremque, explicabo optio nobis. Dolore id consectetur accusamus animi incidunt cum, unde similique, repellat doloribus omnis nobis facilis commodi tempore inventore amet fuga ea laboriosam quam vero repellendus iusto adipisci quisquam? Quia illum beatae cum dignissimos, tenetur neque minus fuga expedita vel.</p>
-      </div>
-      <div className={styles.project}>
-        <h2 className={styles.h2}>title</h2>
-        <Image src="/profile.jpg" alt="" width={300} height={400} className={styles.img} priority />
-        <p className={styles.p}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, culpa. Iure ipsum odio molestiae consequuntur repellat laborum sequi laboriosam itaque dolor distinctio eveniet, optio fugit blanditiis cumque dicta perferendis illo tempore nesciunt, accusamus ratione! Tempore et voluptatum veritatis eligendi esse recusandae laudantium tenetur nam possimus consequatur, temporibus voluptatibus expedita at facilis, dolorum aliquid. Nesciunt facilis ea distinctio iste consequatur ipsa debitis esse nisi asperiores maxime minima ipsam sequi, cupiditate consectetur repellendus nostrum libero tempore voluptates facere? Repellendus, voluptatum ipsa. Animi quisquam sequi sint atque officiis accusamus possimus suscipit. Necessitatibus maxime odio sed adipisci dolore dicta recusandae facilis, nobis tempora corporis delectus ex est ducimus architecto sit ullam? Laudantium accusantium qui ea aspernatur totam cumque exercitationem architecto nemo quae distinctio quos sunt, alias dignissimos, suscipit tempora eius adipisci aliquid culpa accusamus illum quidem! Ab, praesentium? Facilis error dicta quaerat temporibus esse! Odit cupiditate reiciendis quo. Numquam corporis dicta voluptatem earum accusamus excepturi ex atque aut eos, sint neque beatae doloremque, explicabo optio nobis. Dolore id consectetur accusamus animi incidunt cum, unde similique, repellat doloribus omnis nobis facilis commodi tempore inventore amet fuga ea laboriosam quam vero repellendus iusto adipisci quisquam? Quia illum beatae cum dignissimos, tenetur neque minus fuga expedita vel.</p>
-      </div>
-      <div className={styles.project}>
-        <h2 className={styles.h2}>title</h2>
-        <Image src="/profile.jpg" alt="" width={300} height={400} className={styles.img} priority />
-        <p className={styles.p}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, culpa. Iure ipsum odio molestiae consequuntur repellat laborum sequi laboriosam itaque dolor distinctio eveniet, optio fugit blanditiis cumque dicta perferendis illo tempore nesciunt, accusamus ratione! Tempore et voluptatum veritatis eligendi esse recusandae laudantium tenetur nam possimus consequatur, temporibus voluptatibus expedita at facilis, dolorum aliquid. Nesciunt facilis ea distinctio iste consequatur ipsa debitis esse nisi asperiores maxime minima ipsam sequi, cupiditate consectetur repellendus nostrum libero tempore voluptates facere? Repellendus, voluptatum ipsa. Animi quisquam sequi sint atque officiis accusamus possimus suscipit. Necessitatibus maxime odio sed adipisci dolore dicta recusandae facilis, nobis tempora corporis delectus ex est ducimus architecto sit ullam? Laudantium accusantium qui ea aspernatur totam cumque exercitationem architecto nemo quae distinctio quos sunt, alias dignissimos, suscipit tempora eius adipisci aliquid culpa accusamus illum quidem! Ab, praesentium? Facilis error dicta quaerat temporibus esse! Odit cupiditate reiciendis quo. Numquam corporis dicta voluptatem earum accusamus excepturi ex atque aut eos, sint neque beatae doloremque, explicabo optio nobis. Dolore id consectetur accusamus animi incidunt cum, unde similique, repellat doloribus omnis nobis facilis commodi tempore inventore amet fuga ea laboriosam quam vero repellendus iusto adipisci quisquam? Quia illum beatae cum dignissimos, tenetur neque minus fuga expedita vel.</p>
-      </div>
-      <div className={styles.project}>
-        <h2 className={styles.h2}>title</h2>
-        <Image src="/profile.jpg" alt="" width={300} height={400} className={styles.img} priority />
-        <p className={styles.p}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, culpa. Iure ipsum odio molestiae consequuntur repellat laborum sequi laboriosam itaque dolor distinctio eveniet, optio fugit blanditiis cumque dicta perferendis illo tempore nesciunt, accusamus ratione! Tempore et voluptatum veritatis eligendi esse recusandae laudantium tenetur nam possimus consequatur, temporibus voluptatibus expedita at facilis, dolorum aliquid. Nesciunt facilis ea distinctio iste consequatur ipsa debitis esse nisi asperiores maxime minima ipsam sequi, cupiditate consectetur repellendus nostrum libero tempore voluptates facere? Repellendus, voluptatum ipsa. Animi quisquam sequi sint atque officiis accusamus possimus suscipit. Necessitatibus maxime odio sed adipisci dolore dicta recusandae facilis, nobis tempora corporis delectus ex est ducimus architecto sit ullam? Laudantium accusantium qui ea aspernatur totam cumque exercitationem architecto nemo quae distinctio quos sunt, alias dignissimos, suscipit tempora eius adipisci aliquid culpa accusamus illum quidem! Ab, praesentium? Facilis error dicta quaerat temporibus esse! Odit cupiditate reiciendis quo. Numquam corporis dicta voluptatem earum accusamus excepturi ex atque aut eos, sint neque beatae doloremque, explicabo optio nobis. Dolore id consectetur accusamus animi incidunt cum, unde similique, repellat doloribus omnis nobis facilis commodi tempore inventore amet fuga ea laboriosam quam vero repellendus iusto adipisci quisquam? Quia illum beatae cum dignissimos, tenetur neque minus fuga expedita vel.</p>
-      </div>
+      {scripts.map(script => (
+        <div className={styles.project} key={script.id}>
+          <h2 className={styles.h2}>{script.title}</h2>
+          <div className={styles.img_wrapper}>
+            <Image src={script.image} alt="" width={250} height={350} className={styles.img} priority />
+          </div>
+          <p className={styles.p}>{script.content}</p>
+        </div>
+      ))}
     </div>
   )
 }

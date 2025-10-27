@@ -6,7 +6,7 @@ import MyJobProjectList from '../component/MyJobProjectList'
 import MyOwnProjectList from '../component/MyOwnProjectList'
 
 const MyProject = () => {
-  const [page, setPage] = useState<"job" | "own">("job")
+  const [page, setPage] = useState<"job" | "own">("own")
 
   return (
     <div className={styles.project}>
