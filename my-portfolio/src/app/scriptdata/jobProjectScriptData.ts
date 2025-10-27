@@ -39,13 +39,13 @@ export const JobProjectScriptFr = [
 		title: "quotation site",
 		image: "/quotation.png",
 		content:
-			"Joined the project to create the company's website that helps them with making a quotations for their customers! I participated in the part that requires React.js, TypeScript, TailwindCSS, prisma, postgresDataSQL.",
+			"J'ai rejoint un projet afin de creer le site web d'une entreprise afin de les aider a faire des estimations pour leurs clients. Les competences requises etaient l'utilisation de React.js, TypeScript, TailwindCSS, prisma, postgresDataSQL.",
 	},
 	{
 		id: 2,
 		title: "sales app",
 		image: "/tsunagaru.png",
 		content:
-			"Joined the project to improve the company's web app that helps them with expanding and analyzing their business! I participated in the part that requires Next.js, TypeScript, TailwindCSS, Drizzle, Supabase.",
+			"J'ai rejoint un projet qui a pour but d'ameliorer l'application d'une entreprise afin de developper et d'analyser leur business. J'etais responsable de la partie concernant Next.js, TypeScript, TailwindCSS, Drizzle, Supabase.",
 	},
 ];

@@ -39,13 +39,13 @@ export const ownProjectScriptFr = [
 		title: "trip calculator",
 		image: "/tripcalculator.png",
 		content:
-			"A web app that allows you to timely convert money from your currency to other country's currency, and you can calculate a budget for your trip! It's made up of React.js, TypeScript, TailwindCSS, Firebase.",
+			"Une application qui permet de convertir votre devise en une autre en temps reel, et vous pouvez calculer votre budget pour votre voyage ! Il est compose de React.js, TypeScript, TailwindCSS, Firebase.",
 	},
 	{
 		id: 2,
 		title: "portfolio",
 		image: "/portfolio.png",
 		content:
-			"This website that introduces myself! It's made up of Next.js, TypeScript, SASS.",
+			"Ce site web est pour me presenter. Il est compose de Next.js, TypeScript, SASS.",
 	},
 ];

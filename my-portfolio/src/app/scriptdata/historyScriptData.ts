@@ -2,41 +2,41 @@ export const historyScriptEn = [
 	{
 		id: 1,
 		date: "2025/9",
-		title: "Study in Canada",
+		title: "In Canada",
 		content:
-			"study web development in Corner Stone College in Vancouver while working remotely as a web developer.",
+			"study web development in Cornerstone College in Vancouver while working remotely as a web developer.",
 	},
 	{
 		id: 2,
 		date: "2023/9 ~ 2025/8",
-		title: "Work in Australia",
+		title: "In Australia",
 		content:
 			"work as a working holiday maker while learning coding, such as joining my friend's project.",
 	},
 	{
 		id: 3,
 		date: "2022/8 ~ 2023/8",
-		title: "Work in Belgium",
+		title: "In Belgium",
 		content: "start learning coding by myself, such as creating my own app.",
 	},
 	{
 		id: 4,
 		date: "2021/4 ~ 2022/7",
-		title: "Work in Japan",
+		title: "In Japan",
 		content:
 			"work as fulltime job in Japan, sales staff of tech company in Japan.",
 	},
 	{
 		id: 5,
 		date: "2021/3",
-		title: "Graduate from an university in Japan",
+		title: "graduate from an university in Japan",
 		content:
 			"graduate from an university with a bachelor degree, majoring in human science.",
 	},
 	{
 		id: 6,
 		date: "2019/4 ~ 2020/3",
-		title: "Study in Australia",
+		title: "In Australia",
 		content: "study English in a language school in Australia.",
 	},
 ];
@@ -85,46 +85,45 @@ export const historyScriptJp = [
 	},
 ];
 
-// フランス語
 export const historyScriptFr = [
 	{
 		id: 1,
 		date: "2025/9",
-		title: "Study in Canada",
+		title: "Au Canada",
 		content:
-			"study web development in Corner Stone College in Vancouver while working remotely as a web developer.",
+			"etudie le developpement de site web au College Cornerstone a Vancouver, tout en travaillant a distance en tant que developpeur web.",
 	},
 	{
 		id: 2,
 		date: "2023/9 ~ 2025/8",
-		title: "Work in Australia",
+		title: "En Australie",
 		content:
-			"work as a working holiday maker while learning coding, such as joining my friend's project.",
+			"travail en tant que possesseur d'un visa vacances-travail tout en apprenant le code, comme par exemple rejoindre le projet de mon ami.",
 	},
 	{
 		id: 3,
 		date: "2022/8 ~ 2023/8",
-		title: "Work in Belgium",
-		content: "start learning coding by myself, such as creating my own app.",
+		title: "En Belgique",
+		content:
+			"j'ai commence a etudier le code par moi-meme, comme par exemple la creation de ma propre application.",
 	},
 	{
 		id: 4,
 		date: "2021/4 ~ 2022/7",
-		title: "Work in Japan",
+		title: "Au Japon",
 		content:
-			"work as fulltime job in Japan, sales staff of tech company in Japan.",
+			"je travaillais a temps pleins au Japon en tant que vendeur d7une entreprise de technologie.",
 	},
 	{
 		id: 5,
 		date: "2021/3",
-		title: "Graduate from an university in Japan",
-		content:
-			"graduate from an university with a bachelor degree, majoring in human science.",
+		title: "Diplome d'une universite japonaise",
+		content: "j'ai obtenu mon bachelier en sciences humaines.",
 	},
 	{
 		id: 6,
 		date: "2019/4 ~ 2020/3",
-		title: "Study in Australia",
-		content: "study English in a language school in Australia.",
+		title: "En Australie",
+		content: "j'ai etudie l'anglais dans une ecole de langue en Australie.",
 	},
 ];

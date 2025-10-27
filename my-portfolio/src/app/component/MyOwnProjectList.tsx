@@ -26,7 +26,6 @@ const MyOwnProjectList = () => {
       ? language
       : "english";
 
-
   const scripts = selectedScript(currentLanguage)
 
   useEffect(() => {
@@ -40,7 +39,7 @@ const MyOwnProjectList = () => {
         <div className={styles.project} key={script.id}>
           <h2 className={styles.h2}>{script.title}</h2>
           <div className={styles.img_wrapper}>
-            <Image src={script.image} alt="" width={250} height={350} className={styles.img} priority />
+            <Image src={script.image} alt="" width={170} height={250} className={styles.img} priority />
           </div>
           <p className={styles.p}>{script.content}</p>
         </div>

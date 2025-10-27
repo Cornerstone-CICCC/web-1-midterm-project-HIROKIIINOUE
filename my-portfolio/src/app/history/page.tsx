@@ -36,7 +36,7 @@ const MyHistory = () => {
 
   return (
     <div className={styles.history}>
-      <h1 className={styles.h1}>My History</h1>
+      <h1 className={styles.h1}>History</h1>
       <ul className={styles.ul}>
         {scripts.map((script) => (
           <li className={fadeIn ? `${styles.li}` : `${styles.li} ${styles.fade_in}`} key={script.id}>

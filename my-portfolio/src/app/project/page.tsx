@@ -22,7 +22,7 @@ const MyProject = () => {
 
   return (
     <div className={styles.project}>
-      <h1 className={styles.h1}>My Project</h1>
+      <h1 className={styles.h1}>Projects</h1>
       <nav className={styles.nav}>
         <button type='button' className={page === "own" ? `${styles.button} ${styles.selected}` : `${styles.button}`} onClick={() => setPage("own")}>{script[currentLanguage][0]}</button>
         <button type='button' className={page === "job" ? `${styles.button} ${styles.selected}` : `${styles.button}`} onClick={() => setPage("job")}>{script[currentLanguage][1]}</button>
