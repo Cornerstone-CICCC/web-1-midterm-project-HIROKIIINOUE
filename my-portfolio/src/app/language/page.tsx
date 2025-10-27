@@ -12,8 +12,6 @@ const LanguageOption = () => {
     setLanguage(selected)
   }
 
-  setTimeout(() => setFadeIn(true), 10)
-
   useEffect(() => {
     const id: ReturnType<typeof setTimeout> = setTimeout(() => setFadeIn(true), 10);
     return () => clearTimeout(id);

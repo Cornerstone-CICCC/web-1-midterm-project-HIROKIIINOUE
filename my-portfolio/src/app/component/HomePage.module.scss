@@ -136,5 +136,15 @@
         }
       }
     }
+
+    transition: opacity 500ms,
+    transform 2000ms;
   }
+
+  .fade_in {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+
 }
