@@ -12,13 +12,13 @@ const MyProject = () => {
     <div className={styles.project}>
       <h1 className={styles.h1}>My Project</h1>
       <nav className={styles.nav}>
-        <button type='button' className={page === "job" ? `${styles.button} ${styles.selected}` : `${styles.button}`} onClick={() => setPage("job")}>My Job Project</button>
         <button type='button' className={page === "own" ? `${styles.button} ${styles.selected}` : `${styles.button}`} onClick={() => setPage("own")}>My Own Project</button>
+        <button type='button' className={page === "job" ? `${styles.button} ${styles.selected}` : `${styles.button}`} onClick={() => setPage("job")}>My Job Project</button>
       </nav>
-      {page === "job" ? (
-        <MyJobProjectList />
-      ) : (
+      {page === "own" ? (
         <MyOwnProjectList />
+      ) : (
+        <MyJobProjectList />
       )}
     </div>
   )
