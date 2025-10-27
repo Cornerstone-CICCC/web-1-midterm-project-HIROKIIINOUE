@@ -1,0 +1,47 @@
+@use "../styles/mixins";
+
+.project_list {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+
+  @include mixins.mq(mixins.$tablet) {
+    width: 100%;
+  }
+
+  @include mixins.mq(mixins.$mobileIncludingTablet) {
+    grid-template-columns: repeat(1, 1fr);
+    width: 70%;
+  }
+
+  @include mixins.mq(mixins.$exSmallMobile) {
+    width: 105%;
+  }
+}
+
+.project {
+  text-align: center;
+  width: 100%;
+  // background: #323131;
+  opacity: .8;
+  border-radius: 8px;
+  z-index: -10;
+  box-shadow: 0px 0px 10px 5px #777777;
+
+  .h2 {
+    width: 100%;
+    font-size: 32px;
+    color: #adff2f;
+    margin: 8px;
+  }
+
+  .p {
+    text-align: left;
+    width: 100%;
+    font-size: 16px;
+    color: #dbf5b5;
+    padding: 16px;
+
+  }
+}

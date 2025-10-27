@@ -2,6 +2,7 @@
 
 $exSmallMobile: 550px;
 $mobile: 768px;
+$mobileIncludingTablet: 767px;
 $tablet: 1024px;
 
 @mixin mq($bp) {
