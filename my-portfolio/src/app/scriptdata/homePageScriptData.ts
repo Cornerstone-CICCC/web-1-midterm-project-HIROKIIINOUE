@@ -4,7 +4,6 @@ type HomePageScript = {
 	french: string[];
 };
 
-// フランス語
 export const homePageScript: HomePageScript = {
 	english: [
 		"Welcome to my page",

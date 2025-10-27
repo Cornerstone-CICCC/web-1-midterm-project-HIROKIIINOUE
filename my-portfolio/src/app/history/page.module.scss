@@ -48,7 +48,6 @@
       margin: 0 auto;
       width: 50%;
       position: relative;
-      z-index: -10;
       transition: opacity 500ms, transform 2000ms;
 
       @include mixins.mq(mixins.$mobile) {

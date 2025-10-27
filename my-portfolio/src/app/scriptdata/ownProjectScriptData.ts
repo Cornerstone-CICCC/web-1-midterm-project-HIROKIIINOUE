@@ -32,7 +32,6 @@ export const ownProjectScriptJp = [
 	},
 ];
 
-// フランス語
 export const ownProjectScriptFr = [
 	{
 		id: 1,
