@@ -44,7 +44,7 @@ const Header = () => {
               </Link>
             </li>
             <li className={styles.li}>
-              <Link href="https://google.com">
+              <Link href="mailto:tyynh.hiroki@gmail.com?subject=Contact from your website" >
                 <EmailIcon sx={{ fontSize: 40, color: "#adff2f" }} />
               </Link>
             </li>
