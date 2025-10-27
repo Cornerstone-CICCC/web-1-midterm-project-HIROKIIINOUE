@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './page.module.scss'
 import { useLanguage } from '../providers/LanguageProvider'
 
@@ -13,6 +13,11 @@ const LanguageOption = () => {
   }
 
   setTimeout(() => setFadeIn(true), 10)
+
+  useEffect(() => {
+    const id: ReturnType<typeof setTimeout> = setTimeout(() => setFadeIn(true), 10);
+    return () => clearTimeout(id);
+  }, []);
 
   return (
     <div className={styles.languageList}>
