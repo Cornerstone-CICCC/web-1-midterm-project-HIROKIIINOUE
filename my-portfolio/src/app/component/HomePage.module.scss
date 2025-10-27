@@ -13,7 +13,6 @@
 
   .profileImage {
     width: 35%;
-    // background-color: lime;
     display: flex;
     align-items: center;
 
@@ -52,12 +51,10 @@
 
   // Right side
   .introduction {
-    // background-color: pink;
     width: 65%;
     padding: 30px;
     display: flex;
     flex-direction: column;
-    // background-color: pink;
     color: white;
 
     @include mixins.mq(mixins.$mobile) {
@@ -71,8 +68,8 @@
     .h1 {
       height: 25%;
       width: 100%;
-      // background-color: #66a010;
       font-size: 40px;
+      margin-bottom: 8px;
 
       @include mixins.mq(mixins.$mobile) {
         font-size: 20px;
@@ -96,7 +93,6 @@
     .profile {
       height: 30%;
       width: 100%;
-      // background-color: silver;
       font-size: 18px;
 
       @include mixins.mq(mixins.$mobile) {

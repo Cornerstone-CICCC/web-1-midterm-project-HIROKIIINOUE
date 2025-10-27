@@ -1,18 +1,33 @@
 import Image from 'next/image'
 import styles from './MyOwnProjectList.module.scss'
 import React, { useEffect, useState } from 'react'
-import { ownProjectScriptEn } from '../scriptdata/ownProjectScriptData';
+import { ownProjectScriptEn, ownProjectScriptFr, ownProjectScriptJp } from '../scriptdata/ownProjectScriptData';
 import { useLanguage } from '../providers/LanguageProvider';
 
+type LanguageKey = "english" | "japanese" | "french";
+
+const selectedScript = (selectedLanguage: string) => {
+  if (selectedLanguage === "english") {
+    return ownProjectScriptEn
+  } else if (selectedLanguage === "japanese") {
+    return ownProjectScriptJp
+  } else {
+    return ownProjectScriptFr
+  }
+}
 
 const MyOwnProjectList = () => {
   const [fadeIn, setFadeIn] = useState<boolean>(false)
-  const { setLanguage } = useLanguage()
+  const { language } = useLanguage()
 
-  const changeLanguage = (selected: "english" | "japanese" | "french") => {
-    setLanguage(selected)
-  }
-  const scripts = ownProjectScriptEn;
+
+  const currentLanguage: LanguageKey =
+    language === "english" || language === "japanese" || language === "french"
+      ? language
+      : "english";
+
+
+  const scripts = selectedScript(currentLanguage)
 
   useEffect(() => {
     const id: ReturnType<typeof setTimeout> = setTimeout(() => setFadeIn(true), 10);

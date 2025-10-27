@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './page.module.scss'
 import { useLanguage } from '../providers/LanguageProvider'
-import { historyScriptEn, historyScriptFr, historyScriptJp } from '../scriptdata/scriptData';
+import { historyScriptEn, historyScriptFr, historyScriptJp } from '../scriptdata/historyScriptData';
 
 type LanguageKey = "english" | "japanese" | "french";
 

@@ -10,7 +10,7 @@ import ListTwoToneIcon from '@mui/icons-material/ListTwoTone';
 import { usePathname } from 'next/navigation';
 import MenuBar from './MenuBar';
 import { useLanguage } from '../providers/LanguageProvider';
-import { headerScript } from '../scriptdata/scriptData';
+import { headerScript } from '../scriptdata/headerScriptData';
 
 type LanguageKey = "english" | "japanese" | "french";
 

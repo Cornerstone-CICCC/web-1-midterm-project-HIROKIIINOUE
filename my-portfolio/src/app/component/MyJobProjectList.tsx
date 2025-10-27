@@ -2,16 +2,32 @@ import React, { useEffect, useState } from 'react'
 import styles from './MyJobProjectList.module.scss'
 import Image from 'next/image'
 import { useLanguage } from '../providers/LanguageProvider'
-import { JobProjectScriptEn } from '../scriptdata/jobProjectScriptData'
+import { JobProjectScriptEn, JobProjectScriptFr, JobProjectScriptJp } from '../scriptdata/jobProjectScriptData'
+
+type LanguageKey = "english" | "japanese" | "french";
+
+
+const selectedScript = (selectedLanguage: string) => {
+  if (selectedLanguage === "english") {
+    return JobProjectScriptEn
+  } else if (selectedLanguage === "japanese") {
+    return JobProjectScriptJp
+  } else {
+    return JobProjectScriptFr
+  }
+}
 
 const MyJobProjectList = () => {
   const [fadeIn, setFadeIn] = useState<boolean>(false)
-  const { setLanguage } = useLanguage()
+  const { language } = useLanguage()
 
-  const changeLanguage = (selected: "english" | "japanese" | "french") => {
-    setLanguage(selected)
-  }
-  const scripts = JobProjectScriptEn;
+  const currentLanguage: LanguageKey =
+    language === "english" || language === "japanese" || language === "french"
+      ? language
+      : "english";
+
+
+  const scripts = selectedScript(currentLanguage)
 
   useEffect(() => {
     const id: ReturnType<typeof setTimeout> = setTimeout(() => setFadeIn(true), 10);
